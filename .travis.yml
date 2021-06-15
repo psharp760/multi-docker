@@ -14,10 +14,10 @@ after_success:
   - docker build -t psharp760/mulit-nginx ./nginx
   - docker build -t psharp760/multi-server ./server
   - docker build -t psharp760/multi-worker ./worker
-# login to the docker CLI
-- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-# take these images and push them to docker hub
-- docker push psharp760/multi-client
-- docker push psharp760/mulit-nginx
-- docker push psharp760/multi-server
-- docker push psharp760/multi-worker
+  # login to the docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  # take these images and push them to docker hub
+  - docker push psharp760/multi-client
+  - docker push psharp760/mulit-nginx
+  - docker push psharp760/multi-server
+  - docker push psharp760/multi-worker
