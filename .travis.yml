@@ -18,7 +18,7 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # take these images and push them to docker hub
   - docker push psharp760/multi-client
-  - docker push psharp760/mulit-nginx
+  - docker push psharp760/multi-nginx
   - docker push psharp760/multi-server
   - docker push psharp760/multi-worker
 
