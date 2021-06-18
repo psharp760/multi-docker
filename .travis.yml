@@ -11,7 +11,7 @@ script:
 
 after_success:
   - docker build -t psharp760/multi-client ./client
-  - docker build -t psharp760/mulit-nginx ./nginx
+  - docker build -t psharp760/multi-nginx ./nginx
   - docker build -t psharp760/multi-server ./server
   - docker build -t psharp760/multi-worker ./worker
   # login to the docker CLI
